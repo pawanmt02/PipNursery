@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease;
+}
+
+/* Hide default cursor on desktop to enhance SparkleCursor */
+@media (min-width: 768px) {
+  body {
+    cursor: crosshair;
+  }
+}
